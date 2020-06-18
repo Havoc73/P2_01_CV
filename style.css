@@ -57,12 +57,19 @@ table {
     font-weight: normal;
     font-style: normal;
 }
+/*
+233 480 = 713
+3.268
+6.732
 
+*/
 
 html
 {
 	height: 100%;
 	width:100%;
+	display: flex;
+	justify-content:center;
 }
 
 body
@@ -71,12 +78,11 @@ body
 #main_wrapper
 {
 	max-width: 1200px;
-	margin: auto;
 	border: 2px solid black;
 	display: flex;
 	flex-direction:column;
 	align-items: stretch;
-  	justify-content: space-around;
+  	justify-content: space-between;
   	text-align:center;
 }
 
@@ -85,8 +91,9 @@ header
 	display: flex;
 	flex-direction:row;
 	align-items: stretch;
-  	justify-content: space-around;
+  	justify-content: space-between;
   	text-align:center;
+  	height: 240px;
 }
 
 section
@@ -94,18 +101,20 @@ section
 	display: flex;
 	flex-direction:row;
 	align-items: stretch;
-  	justify-content: space-around;
+	justify-content: space-between;
   	text-align:center;
 }
 
 #photo, aside
 {
-	flex:3;
+	flex:3.268;
 	background-color: yellow;
 	/*overflow: hidden;*/
 }
 #titre
-{}
+{
+	background-color: green;
+}
 #titre h1
 {}
 #titre h2
@@ -113,7 +122,7 @@ section
 img
 {
 	border-radius: 50%;
-	margin:10px 10px 10px 10px;
+	margin:20px 20px 20px 20px;
 }
 
 aside
@@ -121,7 +130,7 @@ aside
 	display: flex;
 	flex-direction:column;
 	align-items: stretch;
-  	justify-content: space-around;
+  	justify-content: space-between;
   	text-align:center;
 }
 
@@ -139,7 +148,7 @@ aside p
 }
 #titre, article
 {
-	flex:7;
+	flex:6.732;
 	width: 100%;
 	height: 100%;
 	/*background-color: green;*/
@@ -150,6 +159,7 @@ aside p
 	header
 	{
 		flex-direction:column;
+		height: 100%;
 	}
 #main_wrapper section
 	{
