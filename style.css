@@ -94,7 +94,7 @@ html
 
 h1
 {
-	font: small-caps 4em freesansbold-webfont;
+	font: small-caps 4.2em freesansbold-webfont;
 	text-align: left;
 	margin-left: 40px;
 }
@@ -102,18 +102,20 @@ header h2
 {
 	text-align: left;
 	margin-left: 40px;
-	font: 2em;
+	font-size: 2em;
 	color: rgb(74,74,74);
 }
 
 p
 {
 	color: rgb(74,74,74);
+	font-size: 1.2em;
 }
 
 h3, li
 {
 	color: rgb(74,74,74);
+	font-size: 1.2em;
 }
 
 section h2
@@ -161,12 +163,13 @@ body
 #main_wrapper
 {
 	max-width: 1190px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	display: flex;
 	flex-direction:column;
 	align-items: stretch;
   	justify-content: space-between;
   	text-align:center;
+  	background: rgb(255,253,231);
 }
 
 header 
