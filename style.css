@@ -45,31 +45,6 @@ table {
 }
 
 /* fin reset css */
-
-
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('fonts/OpenSans-Regular-webfont.eot');
-    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
-         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'webfontregular';
-    src: url('uranialig-webfont-webfont.eot');
-    src: url('uranialig-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('uranialig-webfont-webfont.woff2') format('woff2'),
-         url('uranialig-webfont-webfont.woff') format('woff'),
-         url('uranialig-webfont-webfont.ttf') format('truetype'),
-         url('uranialig-webfont-webfont.svg#webfontregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 @font-face {
     font-family: 'freesansbold';
     src: url('freesansbold-webfont.eot');
@@ -96,14 +71,16 @@ h1
 {
 	font: small-caps 4.2em freesansbold-webfont;
 	text-align: left;
-	margin-left: 40px;
+	font-family: "freesansbold-webfont", sans-serif;
+	margin-left: 10%;
+
 }
 header h2
 {
 	text-align: left;
-	margin-left: 40px;
 	font-size: 2em;
 	color: rgb(74,74,74);
+	margin-left: 10%;
 }
 
 p
@@ -150,7 +127,7 @@ aside p
 ul
 {
 	list-style: inside;
-	margin-left: 10px;
+	margin-left: 10%;
 }
 
 
@@ -163,7 +140,7 @@ body
 #main_wrapper
 {
 	max-width: 1190px;
-	/*border: 2px solid black;*/
+	border: 1px solid #ccc;
 	display: flex;
 	flex-direction:column;
 	align-items: stretch;
@@ -178,6 +155,15 @@ header
 	flex-direction:row;
 	align-items: stretch;
   	justify-content: space-between;
+  	text-align:center;
+  	height: 240px;
+}
+
+header div:nth-child(2)
+{
+	display: flex;
+	flex-direction:column;
+  	justify-content: center;
   	text-align:center;
   	height: 240px;
 }
@@ -225,6 +211,7 @@ aside
 	align-items: stretch;
   	justify-content: space-between;
   	text-align:center;
+  	flex-wrap: wrap;
 }
 
 aside h2
@@ -234,12 +221,23 @@ aside h2
 	margin-left: 0;
 }
 
-aside div
-{}
+aside div:nth-child(1)
+{
+	flex:2.5;
+}
+aside div:nth-child(2)
+{
+	flex:5;
+}
+aside div:nth-child(3)
+{
+	flex:2.5;
+}
 
 aside p
 {
 	text-align:justify;
+	margin-bottom: 10px;
 }
 #titre, article
 {
@@ -251,7 +249,7 @@ aside p
 
 article h2
 {
-	margin-left: 50px;
+	margin-left: 10%;
 	margin-bottom: 10px;
 }
 .row
@@ -260,8 +258,9 @@ article h2
 	flex-direction:row;
 	align-items: stretch;
   	text-align:left;
-  	margin-bottom: 50px;
-  	margin-left: 50px;
+  	margin-bottom: 5%;
+  	margin-left: 10%;
+  	flex-wrap: wrap;
  }
  .left
  {
@@ -270,13 +269,14 @@ article h2
 .right
 {
 	flex:6;
+	margin-right: 5%;
 }
 .recommandations
 {
 	flex: 1;
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 775px)
 {
 	header
 	{
