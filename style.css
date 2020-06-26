@@ -45,33 +45,19 @@ table {
 }
 
 /* fin reset css */
-@font-face {
-    font-family: 'freesansbold';
-    src: url('freesansbold-webfont.eot');
-    src: url('freesansbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('freesansbold-webfont.woff2') format('woff2'),
-         url('freesansbold-webfont.woff') format('woff'),
-         url('freesansbold-webfont.ttf') format('truetype'),
-         url('freesansbold-webfont.svg#freesansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 html
 {
 	height: 100%;
 	width:100%;
 	display: flex;
 	justify-content:center;
-	font-family: "freesansbold-webfont", sans-serif;
+	font-family: open_sansregular, sans-serif;
 }
 
 h1
 {
-	font: small-caps 4.2em freesansbold-webfont;
+	font: small-caps 4.2em open_sanslight, sans-serif;
 	text-align: left;
-	font-family: "freesansbold-webfont", sans-serif;
 	margin-left: 10%;
 
 }
@@ -81,6 +67,9 @@ header h2
 	font-size: 2em;
 	color: rgb(74,74,74);
 	margin-left: 10%;
+	line-height:1.2em;
+	margin-bottom: 10%;
+	font-family:open_sanssemibold, sans-serif;
 }
 
 p
@@ -98,7 +87,7 @@ h3, li
 
 section h2
 {
-	font: small-caps 2.5em freesansbold-webfont;
+	font: small-caps 2.5em open_sansextrabold, sans-serif;
 }
 article
 {
@@ -107,28 +96,43 @@ article
 mark
 {
 	color: rgb(128,222,234);
+	font-family: open_sanssemibold, sans-serif;
 }
 article div i
 {
 	color: rgb(128,222,234);
 	margin-right: 2.5%;
-	font: 1em freesansbold-webfont ;
+	font: 1em;
 }
 
 aside i
 {
 	color: rgb(74,74,74);
-	margin: 10px 10px 10px 10px;
-	font-size: 3em;
+	font-size: 40px;
+	width: 50px;
+	height:50px;
+	padding: 5px;
+	margin: 0;
+	color: rgb(74,74,74);
+	border-radius: 50%;
+	border:solid;
+}
+.icon
+{
+	margin:5% 5% 5% 5%;
+	width: 54px;
+	height:54px;
 }
 
 aside p
 {
 	margin: 10% 10% 10% 10%;
+	font-family:open_sanssemibold, sans-serif;
 }
 .text
 {
 	line-height: 2em;
+	font-family:open_sansregular, sans-serif;
 }
 ul
 {
@@ -142,6 +146,12 @@ li
 .right h3
 {
 	font-variant-caps: small-caps;
+	font-family: open_sansextrabold, sans-serif;
+	font-size: 1.6em
+}
+.left h3
+{
+	font-family: open_sansbold, sans-serif;
 }
 span, article h2
 {
@@ -242,6 +252,15 @@ aside div:nth-child(3)
 {
 	flex:2;
 }
+.icons
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align:center;
+	margin: 5% 5% 5% 5%;
+	padding: 0;
+}
 
 aside p
 {
@@ -260,6 +279,7 @@ article h2
 	margin-left: 10%;
 	margin-right: 5%;
 	margin-bottom: 10%;
+	overflow-wrap: break-word;
 }
 .row
 {
@@ -313,4 +333,42 @@ article h2
 		flex-direction:row;
 		flex-wrap: wrap;
 	}
+	h1
+	{
+		text-align: left;
+		margin: 5% 10% 10% 10%;
+		line-height: 1em;
+	}
+	.icons
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align:center;
+	margin: 5% 5% 5% 5%;
+	padding: 0;
 }
+
+}
+
+@media screen and (max-width: 400px)
+{
+	article h2
+{
+	margin-left: 2%;
+	margin-right: 1%;
+	margin-bottom: 10%;
+	overflow-wrap: break-word;
+
+}
+@media screen and (max-width: 360px)
+{
+	article h2
+{
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 10%;
+	overflow-wrap: break-word;
+	font-stretch: condensed;
+}
+
