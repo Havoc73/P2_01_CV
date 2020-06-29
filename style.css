@@ -43,7 +43,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* fin reset css */
 html
 {
@@ -53,13 +52,11 @@ html
 	justify-content:center;
 	font-family: open_sansregular, sans-serif;
 }
-
 h1
 {
 	font: small-caps 4.2em open_sanslight, sans-serif;
 	text-align: left;
 	margin-left: 10%;
-
 }
 header h2
 {
@@ -71,20 +68,17 @@ header h2
 	margin-bottom: 10%;
 	font-family:open_sanssemibold, sans-serif;
 }
-
 p
 {
 	color: rgb(74,74,74);
 	font-size: 1.2em;
 	line-height:1.2em;
 }
-
 h3, li
 {
 	color: rgb(74,74,74);
 	font-size: 1.2em;
 }
-
 section h2
 {
 	font: small-caps 2.5em open_sansextrabold, sans-serif;
@@ -104,7 +98,6 @@ article div i
 	margin-right: 2.5%;
 	font: 1em;
 }
-
 aside i
 {
 	color: rgb(74,74,74);
@@ -134,7 +127,7 @@ ul
 }
 li
 {
-		text-indent: -3em;
+	text-indent: -3em;
 }
 .right h3
 {
@@ -150,13 +143,6 @@ span, article h2
 {
 	border-bottom: solid 2px rgb(128,222,234);
 }
-
-
-
-
-body
-{}
-
 #main_wrapper
 {
 	max-width: 1190px;
@@ -168,7 +154,6 @@ body
   	text-align:center;
   	background: rgb(224,247,250);
 }
-
 header 
 {	
 	display: flex;
@@ -178,7 +163,6 @@ header
   	text-align:center;
   	height: 240px;
 }
-
 header div:nth-child(2)
 {
 	display: flex;
@@ -187,7 +171,6 @@ header div:nth-child(2)
   	text-align:center;
   	height: 240px;
 }
-
 section
 {
 	display: flex;
@@ -196,7 +179,6 @@ section
 	justify-content: space-between;
   	text-align:center;
 }
-
 #photo, aside
 {
 	flex:3.268;
@@ -226,7 +208,6 @@ aside
   	text-align:center;
   	flex-wrap: wrap;
 }
-
 aside h2
 {
 	background-color: rgb(64,64,64);
@@ -254,7 +235,6 @@ aside div:nth-child(3)
 	margin: 5% 5% 5% 5%;
 	padding: 0;
 }
-
 aside p
 {
 	text-align:justify;
@@ -266,7 +246,6 @@ aside p
 	height: 100%;
 	/*background-color: green;*/
 }
-
 article h2
 {
 	margin-left: 10%;
@@ -297,7 +276,6 @@ article h2
 {
 	flex: 1;
 }
-
 @media screen and (max-width: 775px)
 {
 	header
@@ -309,7 +287,11 @@ article h2
 	{
 		flex-direction:column-reverse;
 	}
-	aside div:nth-child(3,4)
+	aside div:nth-child(3)
+	{
+		order:1;
+	}
+	aside div:nth-child(4)
 	{
 		order:1;
 	}
@@ -321,7 +303,7 @@ article h2
 	{
 		display: flex;
 		align-items: stretch;
-  		justify-content: space-around;
+  		justify-content:space-around;
   		text-align:center;
 		flex-direction:row;
 		flex-wrap: wrap;
@@ -332,36 +314,42 @@ article h2
 		margin: 5% 10% 10% 10%;
 		line-height: 1em;
 	}
-	.icons
-{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	text-align:center;
-	margin: 5% 5% 5% 5%;
-	padding: 0;
+	aside div:nth-child(1) div
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:start;
+		text-align:center;
+		margin: 5% 5% 5% 5%;
+		padding: 0;
+	}
+	.recommandations
+	{
+		margin-bottom: 20px;
+	}
 }
-
-}
-
 @media screen and (max-width: 400px)
 {
 	article h2
-{
-	margin-left: 2%;
-	margin-right: 1%;
-	margin-bottom: 10%;
-	overflow-wrap: break-word;
-
+	{
+		margin-left: 2%;
+		margin-right: 1%;
+		margin-bottom: 10%;
+		overflow-wrap: break-word;
+	}
+	.icons
+	{
+		justify-content: start;
+	}
 }
 @media screen and (max-width: 360px)
 {
 	article h2
-{
-	margin-left: 0%;
-	margin-right: 0%;
-	margin-bottom: 10%;
-	overflow-wrap: break-word;
-	font-stretch: condensed;
+	{
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-bottom: 10%;
+		overflow-wrap: break-word;
+		font-stretch: condensed;
+	}
 }
-
