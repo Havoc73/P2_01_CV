@@ -96,7 +96,6 @@ article i
 {
 	color: rgb(128,222,234);
 	margin-right: 2.5%;
-	font: 1em;
 }
 aside i
 {
@@ -345,6 +344,10 @@ article h2
 	.row
 	{
 		flex-direction: column;
+	}
+	.row i
+	{
+		display: none;
 	}
 	aside p
 	{
