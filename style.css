@@ -54,14 +54,17 @@ html
 }
 h1
 {
-	font: small-caps 4.2em open_sanslight, sans-serif;
+	text-transform: uppercase;
+	font-size: 38.4px; 
+	font-family: open_sanslight, sans-serif;
 	text-align: left;
 	margin-left: 10%;
+	margin-bottom: 8px;
 }
 header h2
 {
 	text-align: left;
-	font-size: 2em;
+	font-size: 19.2px;
 	color: rgb(74,74,74);
 	margin-left: 10%;
 	line-height:1.2em;
@@ -96,6 +99,7 @@ article i
 {
 	color: rgb(128,222,234);
 	margin-right: 2.5%;
+	display: inline-block;
 }
 aside i
 {
@@ -111,8 +115,11 @@ aside i
 }
 aside p
 {
-	margin: 10% 10% 10% 10%;
-	font-family:open_sanssemibold, sans-serif;
+	margin: 5% 10% 5% 10%;
+	font-family:open_sansslight, sans-serif;
+	font-size: 16px;
+	line-height: 1em;
+
 }
 .text
 {
@@ -157,17 +164,6 @@ header
 {	
 	display: flex;
 	flex-direction:row;
-	align-items: stretch;
-  	justify-content: space-between;
-  	text-align:center;
-  	height: 240px;
-}
-header div:nth-child(2)
-{
-	display: flex;
-	flex-direction:column;
-  	justify-content: center;
-  	text-align:center;
   	height: 240px;
 }
 .bas
@@ -186,12 +182,8 @@ header div:nth-child(2)
 }
 #titre
 {
-	/*background-color: green;*/
+	padding-top: 80px;
 }
-#titre h1
-{}
-#titre h2
-{}
 
 header img
 {
@@ -216,7 +208,7 @@ aside h2
 
 aside div:nth-child(1)
 {
-	flex:3;
+	flex:2;
 }
 aside div:nth-child(2)
 {
@@ -265,12 +257,13 @@ article h2
  }
  .left
  {
- 	flex:4;
+ 	flex:2;
  }
 .right
 {
-	flex:6;
+	flex:8;
 	margin-right: 5%;
+	margin-left: 5%;
 }
 .recommandations
 {
@@ -283,7 +276,11 @@ article h2
 		flex-direction:column;
 		height: 100%;
 	}
-.bas
+	h1
+	{
+		margin: 0 0 8px 10%
+	}
+	.bas
 	{
 		flex-direction:column-reverse;
 	}
@@ -307,12 +304,6 @@ article h2
   		text-align:center;
 		flex-direction:row;
 		flex-wrap: wrap;
-	}
-	h1
-	{
-		text-align: left;
-		margin: 5% 10% 10% 10%;
-		line-height: 1em;
 	}
 	aside div:nth-child(1) div
 	{
@@ -344,10 +335,6 @@ article h2
 	.row
 	{
 		flex-direction: column;
-	}
-	.row i
-	{
-		display: none;
 	}
 	aside p
 	{
