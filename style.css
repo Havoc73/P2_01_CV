@@ -118,7 +118,6 @@ h5
 	text-transform: uppercase;
     font-family: 'open_sanssemibold';
     font-size: 14px;
-    padding-top: 5%;
     padding-bottom: 2%;
 }
 .fonction
@@ -255,11 +254,11 @@ aside div:nth-child(1)
 }
 aside div:nth-child(2)
 {
-	flex:5;
+	flex:7;
 }
 aside div:nth-child(3)
 {
-	flex:2;
+	flex:1;
 }
 .icons
 {
@@ -283,9 +282,8 @@ aside p
 }
 article h2
 {
-	margin-left: 10%;
-	margin-right: 5%;
-	margin-bottom: 10%;
+	padding-bottom: 10px;
+	margin: 0 5% 5% 10%;
 	overflow-wrap: break-word;
 	font-family:open_sanssemibold, sans-serif;
 	text-transform: uppercase;
