@@ -8,7 +8,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+.main, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -21,7 +21,7 @@ time, mark, audio, video {
 	background: inherit;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+.main, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -138,7 +138,7 @@ h5
     font-size: 12px;
     margin-bottom: 0;
 }
-article
+.main
 {
 	text-align: left;
 }
@@ -147,7 +147,7 @@ mark
 	color: rgb(128,222,234);
 	font-family: open_sanssemibold, sans-serif;
 }
-article i
+.main i
 {
 	color: rgb(128,222,234);
 	margin-right: 12px;
@@ -183,7 +183,7 @@ ul
 	list-style: inside;
 	margin-left: 20%;
 }
-span, article h2
+span, .main h2
 {
 	border-bottom: solid 2px rgb(128,222,234);
 }
@@ -250,11 +250,11 @@ aside h2
 
 aside div:nth-child(1)
 {
-	flex:2;
+	flex:2.5;
 }
 aside div:nth-child(2)
 {
-	flex:7;
+	flex:6.5;
 }
 aside div:nth-child(3)
 {
@@ -273,14 +273,14 @@ aside p
 {
 	text-align:justify;
 }
-#titre, article
+#titre, .main
 {
 	flex:6.732;
 	width: 100%;
 	height: 100%;
 	/*background-color: green;*/
 }
-article h2
+.main h2
 {
 	padding-bottom: 10px;
 	margin: 0 5% 5% 10%;
@@ -366,7 +366,7 @@ article h2
 }
 @media screen and (max-width: 400px)
 {
-	article h2
+	.main h2
 	{
 		margin-left: 10%;
 		margin-right: 10%;
@@ -399,7 +399,7 @@ article h2
 }
 @media screen and (max-width: 360px)
 {
-	article h2
+	.main h2
 	{
 		margin-left: 10%;
 		margin-right: 10%;
